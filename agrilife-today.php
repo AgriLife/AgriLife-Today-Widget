@@ -13,6 +13,8 @@
  * Three widgets in one with thoughtful defaults in case of absentee user.
  */
 
+define( 'TODAY_PLUGIN_DIR_URL', plugin_dir_url( __FILE__ ) );
+
 class Agrilife_Today_Widget extends WP_Widget {
 	private $feeds = array(
     array('All AgriLife Today','http://today.agrilife.org/feed/'),
@@ -218,7 +220,7 @@ function agrilife_widget_agrilifetoday_rss_output( $rss, $args = array() ) {
 			if(	$enclosure->get_extension() == 'jpg' || $enclosure->get_extension() == 'png' || $enclosure->get_extension() == 'gif') {
 			  	$image = '<img class="rssthumb" src="'.$enclosure->get_link().'" alt="'.$title.'" />';
 			 } else {
-			 	$image = '<img class="rssthumb" src="'.get_bloginfo('stylesheet_directory') . '/images/agrilifetodaythumb.jpg?v=100'.'" alt="'.$title.'" />';
+			 	$image = '<img class="rssthumb" src="'. TODAY_PLUGIN_DIR_URL . 'images/agrilifetodaythumb.jpg?v=100'.'" alt="'.$title.'" />';
 			 }
 		}
 		
