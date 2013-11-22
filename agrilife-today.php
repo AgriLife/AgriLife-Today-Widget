@@ -201,7 +201,7 @@ function agrilife_widget_agrilifetoday_rss_output( $rss, $args = array() ) {
 		}
 		
 		// default
-		$image = '<img class="rssthumb" src="'. TODAY_PLUGIN_DIR_URL . 'agrilifetodaythumb.jpg?v=100'.'" alt="'.$title.'" />';
+		$image = '<img class="rssthumb" src="'. TODAY_PLUGIN_DIR_URL . 'agrilifetodaythumb.jpg?v=101'.'" alt="'.$title.'" />';
 
 		$date = $item->get_date( 'U' );
 
@@ -219,7 +219,7 @@ function agrilife_widget_agrilifetoday_rss_output( $rss, $args = array() ) {
 			if(	$enclosure->get_extension() == 'jpg' || $enclosure->get_extension() == 'png' || $enclosure->get_extension() == 'gif') {
 			  	$image = '<img class="rssthumb" src="'.$enclosure->get_link().'" alt="'.$title.'" />';
 			 } else {
-			 	$image = '<img class="rssthumb" src="' . TODAY_PLUGIN_DIR_URL . 'agrilifetodaythumb.jpg?v=100'.'" alt="'.$title.'" />';
+			 	$image = '<img class="rssthumb" src="' . TODAY_PLUGIN_DIR_URL . 'agrilifetodaythumb.jpg?v=101'.'" alt="'.$title.'" />';
 			 }
 		}
 		
