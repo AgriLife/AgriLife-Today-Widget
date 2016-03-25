@@ -4,8 +4,9 @@
 }
 
 .agrilifetoday ul li {
+	min-height: 58px;
 	margin: 0;
-	padding: 20px 0 20px 65px;
+	padding: 11px 0 0 65px;
 	border-bottom: 1px solid #e0dfd8;
 	border-top: 1px solid #fff;
 	position: relative;
@@ -13,11 +14,12 @@
 
 .agrilifetoday ul  > li:first-child {
 	border-top: none;
+	padding-top: 20px;
 }
 
 .agrilifetoday ul li img {
 	left: 0;
-	top: 20px;
+	top: 11px;
 	padding: 4px;
 	position: absolute;
 	background: #f0eee3;
@@ -29,6 +31,10 @@
 	box-shodow: 0 1px 2px #d8d3ae;	
 	width: 48px;
 	height: 48px;
+}
+
+.agrilifetoday ul li:first-child img {
+	top: 20px;
 }
 
 #home-middle .agrilifetoday ul li {
@@ -70,7 +76,6 @@
 .agrilifetoday ul li span.rss-date {
 	display: block;
 	padding-top: 7px;
-	margin-bottom: -10px;
 	text-transform: uppercase;
 	font-family: "minion-pro-1","minion-pro-2", 'Cambria', georgia, serif;	
 }
