@@ -1,0 +1,23 @@
+{
+  "name": "agrilife-today-widget",
+  "version": "1.0.1",
+  "description": "Creates a widget to display stories from today.agrilife.org.",
+  "main": "agrilife-today.php",
+  "scripts": {},
+  "engines": {
+    "node": "4.0.0"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgriLife/AgriLife-Today-Widget.git"
+  },
+  "author": "J. Aaron Eaton",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/AgriLife/AgriLife-Today-Widget/issues"
+  },
+  "homepage": "https://github.com/AgriLife/AgriLife-Today-Widget#readme"
+}
